@@ -1,0 +1,190 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img{width: 100%;}
+*{box-sizing:border-box;}
+
+/* Global */
+body{font-family: Rubik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; line-height: 20px;}
+ a{ color: #362d59; text-decoration: none;}
+ h3{font-size: 20px;}
+.button{ border-radius: 20px; padding: 7px 12px; color: white; text-decoration: none;}
+.buttons{padding-top: 1rem;}
+.button.pink { background-color: #e1566c; color: white !important;  border: none;}
+.button.transparent { background-color: #454545;}
+.text-center{ text-align: center;}
+
+section{width: 100%; float: left;}
+.container{max-width: 1200px; width: 100%; margin: 0% auto; padding: 0px 15px;}
+
+/* header */
+.header .logo {max-width: 200px; float: left;}
+.header .logo svg {width: 200px;}
+.header {padding: 12px 0px 12px 0px;  position:relative; z-index: 1;}
+.header .nav { float: right; padding-top: 12px;}
+.header .nav li {float: left; margin-left: 34px; position:relative }
+.header .nav li a{text-decoration: none; color: #362d59; text-transform: uppercase; font-weight: 500; line-height: 2; font-size: 15px;}
+.header .nav li ul { position: absolute; background-color: white; top: 100%; left: 0; display: none;}
+.header .nav li ul li { float: none; margin: 0; padding: 5px 30px;}
+.header .nav li:hover ul {display: block; }
+.header .nav li ul li:hover { background-color: #e1567c;}
+
+.signup-info{background-color: #ffd400; position: relative;}
+.signup-info p{  padding: 12px 10px 12px 10px}
+.signup-info .close-message{position: absolute; right: 18px; top: 8px; background-color: #f2b712; width: 25px; height: 25px; text-align: center; line-height: 25px; border-radius: 50%; cursor: pointer;}
+
+.hero-banner{ background: url("../images/bg/welcome-page-performance.webp"); padding-top: 21px; padding-bottom: 600px; background-size: cover; background-position: bottom -60px right; background-repeat: no-repeat; background-color: #320f2f; }
+.hero-banner p{color: white; line-height: 34px; padding-bottom: 17px;}
+.hero-banner h1{color: white; font-size: 40px; line-height: 34px; padding-bottom: 17px;}
+.hero-banner .buttons{padding-top: 12px;}
+.hero-banner .button{text-decoration: none; color: #e1567c; margin-left: 2%;}
+
+.features{float: left; width: 100%;  padding-top: 5rem; padding-bottom: 4rem; text-align: center;}
+.features .feature .item{float: left; width: 33%; padding: 10px;}
+.features .feature .item .figure img{width: 200px;  height: 200px;}
+
+.subscriber-list{ padding-top: 4rem; padding-bottom: 4rem; background: url(https://33fa1ur95-pz5k3bbiv.sentry.dev/static/squiggle-trans-abd5701f276211cbe57fe0748b18937c.png),linear-gradient(315deg, #180d1c 0.57%, #452650 100%);float: left; width: 100%;}
+.subscriber-list h2{text-align: center; font-size: 44px; color: white; }
+.subscriber-list .subscriber{float: left; width: 100%; padding-top: 15px;}
+.subscriber-list .subscriber .item{float: left; width: 16.66666666666667%; margin: 20px 0; padding: 0 15px}
+.subscriber-list .subscriber .item svg {overflow: hidden;max-height: 2rem; width: 100%; fill: white;}
+
+.logs-list{padding-top: 4rem; padding-bottom: 4rem; }
+.logs-list .heading{text-align: center;}
+.logs-list .item{float: left; width: 100%; padding-bottom: 3rem;}
+.logs-list .figure{float: right; width: 50%;}
+.logs-list .content{float: left; width: 50%; padding: 70px; padding-inline: 70px;}
+.logs-list .item-figure .figure{float: left;}
+
+.enterprise{ padding-top: 5rem; padding-bottom: 4rem; text-align: center;}
+.enterprise .heading{text-align: center;}
+.sentry {float: left; width: 100%; text-align: center;}
+.sentry .item{float: left; width: 33%; text-align: left; padding: 2rem;}
+
+.support-list{ padding-top: 4rem; padding-bottom: 4rem; float: left; width: 100%; text-align: center;}
+.support-list .support{float: left; width: 100%;}
+.support-list .support .item{float: left; width: 11.666667%; margin: 20px 0; padding: 0 15px}
+
+.testimonial{ padding-top: 4rem; padding-bottom: 4rem; float: left; width: 100%; text-align: center;}
+.testimonial .figure-list{float: left; width: 100%;}
+.testimonial .figure-list .figure{float: left; width: 31%; text-align: center; margin: 1%;}
+.testimonial .content .item{float: left; width: 50%; text-align: left;}
+.testimonial .content .item .figure{width: 200px; padding-top: 2rem;}
+
+.newsletter{background-color: #f6f6f8; padding-top: 4rem; padding-bottom: 4rem; float: left; width: 100%; }
+.newsletter .content{float: left; width: 40%;}
+.newsletter .form{float: left; width: 60%; background-color: #ffffff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); padding: 20px;}
+.newsletter .form .form-group{padding-bottom: 12px;}
+.newsletter .form .form-group label{display: block; padding-bottom: 12px;}
+.newsletter .form .form-group span a{color: red;}
+.newsletter .form .form-group span a:hover{text-decoration: underline;}
+.newsletter .form .form-group .text{width: 100%; height: 37px; border-radius: 12px;}
+
+.footer{ padding-top: 4rem; padding-bottom: 4rem; float: left; width: 100%;}
+.footer .footer-main{float: left; width: 100%;}
+.footer .footer-main .item{float: left; width: 15%;}
+.footer .footer-main .item li{ margin: 19px 0px;}
+.footer .footer-main .item li:hover{background-color: transparent; border-color: transparent; box-shadow: none; color: inherit;}
+.footer-main .item li a{color: #e1567c;}
+.footer-main .items li a{color: #e1567c;}
+.footer .footer-main .items li{ margin: 19px 0px;}
+.footer .footer-main .items{float: left; width: 15%; padding-top: 3rem;}
+.footer .copyrigth{padding-top: 4rem; }
+.footer .copyrigth .icon-list a{color: #e1567c; float: left; padding-top: 5rem; padding: 50px 16px 10px 10px;}
+.footer .copyrigth .info{float: left; padding-top: 1rem; width: 100%;}
+.footer .copyrigth .info .footer-logo{float: right; background-color: #584674; color: white;}
+
+
+
+
+
+@media screen and (max-width: 1110px) {
+
+    .logs-list .item .figure {width: 100%;}
+    .logs-list .item-figure .figure{width: 100%;}
+    .logs-list .item .content {width: 100%;}
+    .logs-list .item-figure .content{width: 100%;}
+    .sentry .item{width: 100%;}
+    .support-list .support .item {width: 24.666667%;}
+    .footer .footer-main .item{width: 33%; text-align: center;}
+    .footer .footer-main .items{width: 33%; text-align: center;}
+    .subscriber-list .subscriber .item{width: 33%;}
+
+
+
+    }
+@media screen and (max-width: 676px) {
+
+    .hero-banner{background-size: 100%; padding: 20px 10px; background-image: none; text-align: center;}
+    .features .feature .item {width: 100%;}
+    .testimonial .figure-list .figure{width: 100%;}
+    .subscriber-list .subscriber .item{width: 50%;}
+    .support-list .support .item {width: 50%;}
+    .testimonial .content .item{width: 100%;}
+    .newsletter .content {width: 100%; padding-bottom: 2rem;}
+    .newsletter .form {width: 100%;}
+    }
+
+    @media screen and (max-width: 480px){
+
+        .header .logo svg{width: 100%;}
+        .support-list .support img {width: 50%;}
+        .subscriber-list .subscriber .item{width: 100%;}
+        .support-list .support .item {width: 100%;}
+        .footer .footer-main .item{width: 50%; text-align: center;}
+        .footer .footer-main .items{width: 50%; text-align: center;}
+        
+    }
+
+
+    .home-demo .item {
+        background: #ff3f4d;
+    }
+    .home-demo h2 {
+        color: #FFF;
+        text-align: center;
+        padding: 5rem 0;
+        margin: 0;
+        font-style: italic;
+        font-weight: 300;
+    }
